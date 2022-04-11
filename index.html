@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list table form style</title>
+    <style>
+        .ul ul{
+            list-style-type:"\1F44D";
+        }
+        table{
+            border: 1px solid black;
+            border-spacing: 0px;
+
+        }
+        thead{
+            background-color: rgb(14, 152, 211);
+            color: white;
+        }
+        .even{
+            background-color: rgb(212, 238, 253);
+        }
+        .odd{
+            background-color: rgb(190, 218, 235);
+        }
+        .form{
+            border: 2px solid black;
+            margin-top: 10px;
+            width: 280px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Poetry Workshop
+    </h1>
+    <div class="para"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugiat et laudantium necessitatibus alias deserunt exercitationem error officia natus magni?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, est?</p></div>
+        <div class="ul">
+            <ul>
+                <li>A Poetic Perspective</li>
+                <li>Wait whiteman at war</li>
+                <li>found poems and outsider peotry</li>
+            </ul>
+        </div>
+        <div class="table">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>New York</th>
+                        <th>Chicago</th>
+                        <th>San Francisco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="even"><td> A Poetic Perspective</td><td>Sat, 4 Feb 2012<br />11am - 2pm</td>
+                    <td>Sat, 3 Mar 2012<br />11am - 2pm</td>
+                    <td>Sat, 17 Mar 2012<br />11am - 2pm</td></td>
+                    </tr>
+                    <tr class="odd"><td>Wait whiteman at war</td><td>Sat, 7 Apr 2012<br />11am - 1pm</td>
+                        <td>Sat, 5 May 2012<br />11am - 1pm</td>
+                        <td>Sat, 19 May 2012<br />11am - 1pm</td> </tr>
+                    <tr class="even"><td> found poems and outsider peotry</td><td>Sat, 9 Jun 2012<br />11am - 2pm</td>
+                        <td>Sat, 7 Jul 2012<br />11am - 2pm</td>
+                        <td>Sat, 21 Jul 2012<br />11am - 2pm</td></tr>
+                    <tr class="odd"><td> Netural Death</td><td>Sat, 4 Aug 2012<br />11am - 4pm</td>
+                        <td>Sat, 8 Sep 2012<br />11am - 4pm</td>
+                        <td>Sat, 15 Sep 2012<br />11am - 4pm</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <form class="form" >
+ <legend>Register your interest</legend>
+ <p><label class="title" for="name">Your name:</label>
+ <input type="text" name="name" id="name"><br />
+ <label class="title" for="email">Your email:</label>
+ <input type="text" name="email" id="email"></p>
+ <p><label for="location" class="title">Your closest center:</label>
+ <select name="location" id="location">
+ <option value="ny">New York</option>
+ <option value="il">Chicago</option>
+ <option value="ca">San Francisco</option>
+ </select></p>
+ <span class="title">Are you a member?</span>
+ <label><input type="radio" name="member" value="yes" /> Yes</label>
+ <label><input type="radio" name="member" value="no" /> No</label></p>
+ </fieldset>
+ <div class="submit"><input type="submit" value="Register" /></div>
+ </form>
+</body>
+</html>
